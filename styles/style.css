@@ -5,6 +5,7 @@
   --ice: #cfe2ff;
   --green: #198754;
   --orange: #ffc107;
+  --gold: #c79604;
   --black: black;
   --dark: #212529;
   --gray: #6c757d;
@@ -249,20 +250,37 @@ body {
   animation: fadeInLeftAnimate 1.5s;
 }
 
-.scroll-container {
-  border-radius: 5px;
-  overflow: hidden;
+.fadeInDown {
+  -moz-animation: fadeInDownAnimate 1.5s;
+  -webkit-animation: fadeInDownAnimate 1.5s;
+  animation: fadeInDownAnimate 1.5s;
 }
 
-.scroll-text {
-  -moz-transform: translateX(200%);
-  -webkit-transform: translateX(200%);
-  transform: translateX(200%);
-  filter: contrast(125%);
+.fadeInUp {
+  -moz-animation: fadeInUpAnimate 1.5s;
+  -webkit-animation: fadeInUpAnimate 1.5s;
+  animation: fadeInUpAnimate 1.5s;
+}
 
-  -moz-animation: my-animation 7s linear infinite;
-  -webkit-animation: my-animation 7s linear infinite;
-  animation: my-animation 7s linear infinite;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
 }
 
 /* ----------------------------------------------
@@ -359,39 +377,6 @@ body {
 }
 
 /* for Firefox */
-@-moz-keyframes my-animation {
-  from {
-    -moz-transform: translateX(200%);
-  }
-  to {
-    -moz-transform: translateX(-200%);
-  }
-}
-
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from {
-    -webkit-transform: translateX(200%);
-  }
-  to {
-    -webkit-transform: translateX(-200%);
-  }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(200%);
-    -webkit-transform: translateX(200%);
-    transform: translateX(200%);
-  }
-  to {
-    -moz-transform: translateX(-200%);
-    -webkit-transform: translateX(-200%);
-    transform: translateX(-200%);
-  }
-}
-
-/* for Firefox */
 @-moz-keyframes fadeInRightAnimate {
   from {
     -moz-transform: translateX(-25%);
@@ -465,6 +450,84 @@ body {
     -moz-transform: translateX(0%);
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* for Firefox */
+@-moz-keyframes fadeInUpAnimate {
+  from {
+    -moz-transform: translateY(25%);
+    opacity: 0.1;
+  }
+  to {
+    -moz-transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes fadeInUpAnimate {
+  from {
+    -webkit-transform: translateY(25%);
+    opacity: 0.1;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUpAnimate {
+  from {
+    -moz-transform: translateY(25%);
+    -webkit-transform: translateY(25%);
+    transform: translateY(25%);
+    opacity: 0.1;
+  }
+  to {
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* for Firefox */
+@-moz-keyframes fadeInDownAnimate {
+  from {
+    -moz-transform: translateY(25%);
+    opacity: 0.1;
+  }
+  to {
+    -moz-transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes fadeInDownAnimate {
+  from {
+    -webkit-transform: translateY(-25%);
+    opacity: 0.1;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDownAnimate {
+  from {
+    -moz-transform: translateY(-25%);
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+    opacity: 0.1;
+  }
+  to {
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
     opacity: 1;
   }
 }
