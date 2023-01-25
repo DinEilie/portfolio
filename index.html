@@ -21,13 +21,15 @@
       rel="stylesheet"
     />
     <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/scroller.css" rel="stylesheet" />
+    <link href="styles/animations.css" rel="stylesheet" />
     <title>Din Eilie</title>
   </head>
 
   <body class="bg-dark text-white">
-    <section class="fadeInDown">
+    <section>
       <nav
-        class="navbar sticky-top navbar-expand-lg shadow bg-dark navbar-dark"
+        class="navbar sticky-top fadeInDown navbar-expand-lg shadow bg-dark navbar-dark"
       >
         <div class="container-fluid textEnter">
           <a class="navbar-brand fs-brand mx-4" href=""
@@ -56,6 +58,9 @@
                 <a class="nav-link" href="#">EDUCATION</a>
               </li>
               <li class="nav-item px-2 fs-item px-xl-3 px-xxl-4">
+                <a class="nav-link" href="#">ABOUT ME</a>
+              </li>
+              <li class="nav-item px-2 fs-item px-xl-3 px-xxl-4">
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
               <li class="nav-item px-2 fs-item px-xl-3 px-xxl-4">
@@ -79,31 +84,134 @@
           </div>
         </div>
       </nav>
-    </section>
 
-    <span class="z-n1 position-fixed fs-big">D e v e l o p e r</span>
-    <section class="home">
-      <div class="container-fluid z-2">
-        <div class="row text-dark">
-          <div class="col text-start p-5 fadeInRight">
-            <span class="fs-title">Full Stack Developer</span>
-            <p id="textWriter">|</p>
-            <button
-              id="seeWork"
-              type="button"
-              class="btn btn-dark btn-lg btn-hover-primary"
-            >
-              <pre>&lt;&gt; See My Work</pre>
-            </button>
+      <span class="z-n1 position-fixed fs-big">D e v e l o p e r</span>
+      <section class="home">
+        <div class="container-fluid z-2">
+          <div class="row text-dark">
+            <div class="col text-start p-5 fadeInRight">
+              <span class="fs-title">Full Stack Developer</span>
+              <p id="textWriter">|</p>
+              <button
+                id="seeWork"
+                type="button"
+                class="btn btn-dark btn-lg btn-hover-primary"
+              >
+                <pre> &lt;&gt; See My Work </pre>
+              </button>
+            </div>
+            <div class="col text-center fadeInLeft">
+              <img
+                class="introImg"
+                src="images/undraw_programming_re_kg9v.svg"
+              />
+            </div>
           </div>
-          <div class="col text-center fadeInLeft">
-            <img src="images/undraw_programming_re_kg9v.svg" />
+        </div>
+      </section>
+    </section>
+    <section class="projects">
+      <span class="p-5 fs-title">PROJECTS</span>
+      <div class="container text-center">
+        <!-- block -->
+        <div class="row mb-5 mt-5 p-5 fadeInRight">
+          <div
+            class="col border-top-0 border-bottom-0 border-end-0 p-5 blackShadow-lg bg-dark border-warning border border-5"
+          >
+            <div class="row">
+              <div class="col-8 text-start">
+                <h1>Bug Tracker</h1>
+                <p class="text-secondary" style="font-style: italic">
+                  A full stack application that allow users<br />
+                  to create and manage tasks, projects, service tickets<br />
+                  and more. This application is hosted on XXX.<br />
+                </p>
+                <h2>Skills</h2>
+                <div class="d-flex flex-row flex-wrap mb-3 fw-light">
+                  <div class="p-2">
+                    <i
+                      class="fa-brands fa-react text-primary-color fw-light"
+                    ></i>
+                    React
+                  </div>
+                  <div class="p-2">
+                    <i class="bi bi-filetype-tsx text-primary-color"></i>
+                    TypeScript
+                  </div>
+                  <div class="p-2">
+                    <i class="fa-brands fa-node-js text-primary-color"></i>
+                    NodeJS
+                  </div>
+                  <div class="p-2">
+                    <i class="bi bi-bootstrap text-primary-color"></i> Bootstrap
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  style="height: 10em; width: 10em"
+                  src="images/undraw_fixing_bugs_w7gi.svg"
+                />
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-warning">
+                    <i class="fa-solid fa-eye"></i> Demo
+                  </button>
+                  <button type="button" class="btn btn-warning">
+                    <i class="fa-brands fa-github"></i> Source
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- block -->
+        <div class="row mb-5 mt-5 p-5 fadeInLeft">
+          <div
+            class="col border-top-0 border-bottom-0 border-start-0 p-5 blackShadow-lg bg-dark border-warning border border-5"
+          >
+            <div class="row">
+              <div class="col-8 text-start">
+                <h1>Coding Challenges</h1>
+                <p class="text-secondary" style="font-style: italic">
+                  Mastering algorithmic skills and Data structers<br />
+                  by completing many coding challenges.<br />
+                </p>
+                <h2>Skills</h2>
+                <div class="d-flex flex-row flex-wrap mb-3 fw-light">
+                  <div class="p-2">
+                    <i class="fa-brands fa-js text-primary-color"></i>
+                    JavaScript
+                  </div>
+                  <div class="p-2">
+                    <i
+                      class="fa-sharp fa-solid fa-globe text-primary-color"
+                    ></i>
+                    JQuery
+                  </div>
+                  <div class="p-2">
+                    <i class="bi bi-bootstrap text-primary-color"></i> Bootstrap
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <img
+                  style="height: 10em; width: 11em"
+                  src="images/undraw_fixing_bugs_w7gi.svg"
+                />
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-warning">
+                    <i class="fa-solid fa-eye"></i> Demo
+                  </button>
+                  <button type="button" class="btn btn-warning">
+                    <i class="fa-brands fa-github"></i> Source
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="skill">
-      <span class="p-5 fs-title">PROJECTS</span>
     </section>
   </body>
   <script
@@ -111,6 +219,11 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"
   ></script>
+  <script
+    src="https://kit.fontawesome.com/c15f1a1eaf.js"
+    crossorigin="anonymous"
+  ></script>
   <script src="scripts/search.js"></script>
   <script src="scripts/introduction.js"></script>
+  <script src="scripts/projects.js"></script>
 </html>

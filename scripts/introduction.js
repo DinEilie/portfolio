@@ -2,8 +2,8 @@ var textElement = document.getElementById("textWriter");
 var textElementVar = textElement.innerHTML;
 var btn = document.getElementById("seeWork");
 const text =
-  'Studying$<span id="writerTitle" class="text-white bg-dark px-2"> Full Stack Development</span>$at The External Studies Institute, while also being a$<span class="text-white bg-dark px-2">Computer Science</span>$student at The Open University. I am an experienced Information Technology Admin well-versed in infrastructure, security planning and daily operations management.';
-speed = 65;
+  'Hello! I am Din a$<span id="writerTitle" class="text-white bg-dark px-2"> Full Stack Developer</span>$and a Computer Science student at The Open University. After years of dedication as an IT Administrator, I am taking a step forward into Web Development and programming.';
+speed = 35;
 var j = 0;
 
 startWritingText();
@@ -50,7 +50,7 @@ function holdWritingText() {
 
 // Change speed writing
 function toggleSpeed() {
-  if (speed == 65) speed = 5;
-  else speed = 65;
+  if (speed == 35) speed = 5;
+  else speed = 35;
   console.log("speed= " + speed);
 }
