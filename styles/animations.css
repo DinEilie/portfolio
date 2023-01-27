@@ -144,7 +144,7 @@
 /* for Firefox */
 @-moz-keyframes fadeInRightAnimate {
   from {
-    -moz-transform: translateX(-25%);
+    -moz-transform: translateX(-10%);
     opacity: 0.1;
   }
   to {
@@ -156,7 +156,7 @@
 /* for Chrome */
 @-webkit-keyframes fadeInRightAnimate {
   from {
-    -webkit-transform: translateX(-25%);
+    -webkit-transform: translateX(-10%);
     opacity: 0.1;
   }
   to {
@@ -167,9 +167,9 @@
 
 @keyframes fadeInRightAnimate {
   from {
-    -moz-transform: translateX(-25%);
-    -webkit-transform: translateX(-25%);
-    transform: translateX(-25%);
+    -moz-transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
     opacity: 0.1;
   }
   to {
@@ -183,7 +183,7 @@
 /* for Firefox */
 @-moz-keyframes fadeInLeftAnimate {
   from {
-    -moz-transform: translateX(25%);
+    -moz-transform: translateX(10%);
     opacity: 0.1;
   }
   to {
@@ -195,7 +195,7 @@
 /* for Chrome */
 @-webkit-keyframes fadeInLeftAnimate {
   from {
-    -webkit-transform: translateX(25%);
+    -webkit-transform: translateX(10%);
     opacity: 0.1;
   }
   to {
@@ -206,9 +206,9 @@
 
 @keyframes fadeInLeftAnimate {
   from {
-    -moz-transform: translateX(25%);
-    -webkit-transform: translateX(25%);
-    transform: translateX(25%);
+    -moz-transform: translateX(10%);
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
     opacity: 0.1;
   }
   to {
