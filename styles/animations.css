@@ -15,6 +15,7 @@
 
 .nav-link:hover {
   color: var(--primary);
+  border-color: var(--primary);
   -webkit-animation: text-shadow-drop-bottom 0.4s both;
   animation: text-shadow-drop-bottom 0.4s both;
 }
