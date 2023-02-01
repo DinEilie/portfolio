@@ -9,6 +9,30 @@
     filter: blur(10px);
   }
 
+  .arrow-up {
+    width: 80px;
+    height: 80px;
+    bottom: 10%;
+    right: 10%;
+    text-align: center;
+    font-size: 3.5rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    border-radius: 100%;
+  }
+
+  .arrow-up:hover {
+    width: 80px;
+    height: 80px;
+    bottom: 10%;
+    right: 10%;
+    text-align: center;
+    font-size: 3.5rem;
+    background-color: var(--dark);
+    color: var(--primary);
+    border-radius: 100%;
+  }
+
   .fs-large {
     font-size: 15rem;
   }
@@ -47,9 +71,9 @@
     background-color: var(--white);
     text-align: center;
   }
-  .svgEducation{
+  .svgEducation {
     position: relative;
-    z-index:-1;
+    z-index: -1;
   }
 }
 
@@ -84,8 +108,8 @@
   .home {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 35%;
-    padding-top: 5%;
+    padding-bottom: 15%;
+    padding-top: 15%;
     background-color: var(--primary);
     font-size: 1.5rem;
   }
@@ -159,7 +183,6 @@
   }
 
   .education {
-    
   }
 }
 

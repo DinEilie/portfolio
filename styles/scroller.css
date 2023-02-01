@@ -19,3 +19,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gold);
 }
+
+html {
+  scroll-behavior: smooth;
+}
