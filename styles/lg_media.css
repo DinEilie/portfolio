@@ -138,13 +138,37 @@
     filter: blur(10px);
   }
 
+  .arrow-up {
+    width: 80px;
+    height: 80px;
+    bottom: 10%;
+    right: 3.5%;
+    text-align: center;
+    font-size: 3.5rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    border-radius: 100%;
+  }
+
+  .arrow-up:hover {
+    width: 80px;
+    height: 80px;
+    bottom: 10%;
+    right: 3.5%;
+    text-align: center;
+    font-size: 3.5rem;
+    background-color: var(--dark);
+    color: var(--primary);
+    border-radius: 100%;
+  }
+
   .introImg {
     margin-top: 12%;
     width: 17em;
   }
 
   .educImg {
-    margin-top: 7%;
+    margin-top: 1.5%;
     width: 30em;
   }
 
@@ -183,6 +207,7 @@
   }
 
   .education {
+    
   }
 }
 
