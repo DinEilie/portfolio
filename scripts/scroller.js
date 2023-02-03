@@ -3,8 +3,8 @@ const duration = 800;
 const home = document.getElementById("home");
 const arrowUp = document.getElementById("arrow");
 const projects = document.getElementById("projects");
-const education = document.getElementById("education");
-const education1 = document.getElementById("education1");
+const about = document.getElementById("about");
+const about1 = document.getElementById("about1");
 const project1 = document.getElementById("project1");
 const project2 = document.getElementById("project2");
 
@@ -12,7 +12,7 @@ const project2 = document.getElementById("project2");
 window.addEventListener("scroll", (event) => {
   scroller = this.scrollY;
   console.log("Scroller Y:" + scroller);
-  console.log("education:" + education.offsetTop);
+  console.log("about:" + about.offsetTop);
   if (screen.width > 2560) {
   } else if (screen.width <= 2560 && screen.width > 1920) {
     // Toggle arrow button
@@ -53,10 +53,10 @@ window.addEventListener("scroll", (event) => {
       project2.classList.add("fadeInLeft");
     }
 
-    // Toggle education
-    if (scroller >= education.offsetTop - 460) {
-      education1.classList.remove("invisible");
-      education1.classList.add("fadeInDown");
+    // Toggle about
+    if (scroller >= about.offsetTop - 460) {
+      about1.classList.remove("invisible");
+      about1.classList.add("fadeInDown");
     }
   } else if (screen.width <= 1440 && screen.width > 1200) {
   }
