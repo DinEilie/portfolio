@@ -62,6 +62,10 @@ body {
   filter: drop-shadow(0px 1rem 5px rgb(0 0 0 / 0.4));
 }
 
+.svgShadowUp {
+  filter: drop-shadow(0px -1rem 5px rgb(0 0 0 / 0.4));
+}
+
 .bg-dark-gradient {
   background: rgb(60, 60, 60);
   background: linear-gradient(
@@ -72,6 +76,15 @@ body {
     rgba(49, 49, 49, 1) 9%,
     rgba(30, 30, 30, 1) 35%
   );
+}
+
+.fill-bg{
+  position: absolute;
+  padding-left: 3px;
+  padding-right: 3px;
+  transform: translateX(-3px);
+  width: fit-content;
+  display: inline-block;
 }
 
 .py-6{

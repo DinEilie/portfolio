@@ -3,10 +3,14 @@ const duration = 800;
 const home = document.getElementById("home");
 const arrowUp = document.getElementById("arrow");
 const projects = document.getElementById("projects");
-const about = document.getElementById("about");
-const about1 = document.getElementById("about1");
 const project1 = document.getElementById("project1");
 const project2 = document.getElementById("project2");
+const about = document.getElementById("about");
+const about1 = document.getElementById("about1");
+const about3 = document.getElementById("about3");
+const about4 = document.getElementById("about4");
+const about5 = document.getElementById("about5");
+const about6 = document.querySelectorAll(".fill-bg");
 
 // Listen to scroller Y axis
 window.addEventListener("scroll", (event) => {
@@ -57,7 +61,33 @@ window.addEventListener("scroll", (event) => {
     if (scroller >= about.offsetTop - 460) {
       about1.classList.remove("invisible");
       about1.classList.add("fadeInDown");
+
+      setTimeout(() => {
+        about3.classList.remove("invisible");
+        about3.classList.add("fadeInDown");
+      }, 500);
+
+      setTimeout(() => {
+        about4.classList.remove("invisible");
+        about4.classList.add("fadeInDown");
+      }, 1000);
+
+      setTimeout(() => {
+        about5.classList.remove("invisible");
+        about5.classList.add("fadeInDown");
+      }, 1500);
+
+      setTimeout(() => {
+        for (let i = 0; i < about6.length; i++) {
+          about6[i].classList.remove("text-white");
+          about6[i].classList.add("text-dark");
+          about6[i].classList.add("scale-in-hor-center");
+        }
+      }, 2000);
     }
   } else if (screen.width <= 1440 && screen.width > 1200) {
   }
 });
+
+let username = 5
+console.log(username)

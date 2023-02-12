@@ -2,7 +2,7 @@ var textElement = document.getElementById("textWriter");
 var textElementVar = textElement.innerHTML;
 var btn = document.getElementById("seeWork");
 const text =
-  'Hello! I am Din a$<span id="writerTitle" class="text-white bg-dark px-2"> Full Stack Developer</span>$and a Computer Science student at The Open University. After years of dedication as an IT Administrator, I am taking a step forward into Web Development and programming.';
+  'Hello! I am Din a$<span class="text-white bg-dark px-2"> Full Stack Developer</span>$and a Computer Science student at The Open University. After years of dedication as an IT Administrator, I am taking a step forward into Web Development and programming.';
 speed = 35;
 var j = 0;
 
