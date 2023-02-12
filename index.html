@@ -52,7 +52,7 @@
               <a class="nav-link" href="#about">ABOUT ME</a>
             </li>
             <li class="nav-item px-2 fs-item px-xl-3 px-xxl-4">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
           <div id="searchForm">
@@ -100,7 +100,7 @@
   <!-- Projects -->
   <section id="projects" class="z-1 position-relative projects">
 
-    <!-- About Me title -->
+    <!-- Projects title -->
     <span class="p-5 fs-title">PROJECTS</span>
     <div class="container text-center">
       <!-- block -->
@@ -266,7 +266,7 @@
 
   <!-- Contact -->
   <section class="z-1 position-relative contact">
-    <span class="fs-title">Contact</span>
+    <span id="contact" class="fs-title">Contact</span>
     <div class="fs-title">
       <button class="btn btn-lg btn-primary-color img-hover-primary">
         <i class="fa-brands fa-linkedin-in"></i>
@@ -287,26 +287,32 @@
         <div class="row pb-4">
           <div class="col">
             <label for="inputFN" class="form-label">First Name</label>
-            <input id="inputFN" type="text" class="form-control" placeholder="Johny" aria-label="First name">
+            <input id="inputFN" type="text" class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white" aria-label="First name">
           </div>
           <div class="col">
             <label for="inputLN" class="form-label">Last Name</label>
-            <input id="inputLN" type="text" class="form-control" placeholder="Bravo" aria-label="Second name">
+            <input id="inputLN" type="text" class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white" aria-label="Second name">
           </div>
         </div>
         <div class="row pb-4">
           <div class="col">
             <label for="inputEmail" class="form-label">Email</label>
-            <input id="inputEmail" type="email" class="form-control" placeholder="johnyBravo@mail.com"
+            <input id="inputEmail" type="email" class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white"
               aria-label="email">
           </div>
         </div>
         <div class="row">
           <div class="mb-2">Comments</div>
           <div class="col form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+            <textarea class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white" id="floatingTextarea"
               style="height: 15em;"></textarea>
-            <label class="text-secondary px-4" for="floatingTextarea">Your comments</label>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+            <button type="submit" class="btn btn-lg btn-primary-color img-hover-primary">
+              <i class="fa-solid fa-paper-plane"></i> Send
+            </button>
           </div>
         </div>
       </div>
