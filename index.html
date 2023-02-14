@@ -26,7 +26,7 @@
         class="fa-sharp fa-solid fa-circle-up"></i> </span></a>
 
   <!-- Projects background title -->
-  <span class="position-fixed fs-big">P R O J E C T S</span>
+  <span id="bg-title" class="position-fixed fs-big">P R O J E C T S</span>
 
   <!-- Home -->
   <section class="z-1 position-relative" id="Home">
@@ -208,7 +208,8 @@
   <!-- About -->
   <section id="about" class="z-1 position-relative about text-dark">
     <span class="fs-title">About Me</span>
-    <div class="fs-6"><a class="text-primary-color" href="" download><i class="fa-solid fa-download"></i> Download full
+    <div class="fs-6"><a class="text-primary-color" href="./files/Din Eilie Resume.pdf" download><i
+          class="fa-solid fa-download"></i> Download full
         CV</a></div>
     <div id="about1" class="invisible">
       <div class="aboutGrid">
@@ -268,53 +269,55 @@
   <section class="z-1 position-relative contact">
     <span id="contact" class="fs-title">Contact</span>
     <div class="fs-title">
-      <button class="btn btn-lg btn-primary-color img-hover-primary">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </button>
-      <button class="btn btn-lg btn-primary-color img-hover-primary">
-        <i class="fa-brands fa-github"></i>
-      </button>
-      <button class="btn btn-lg btn-primary-color img-hover-primary">
-        <i class="fa-brands fa-google"></i></span>
-      </button>
-      <button class="btn btn-lg btn-primary-color img-hover-primary">
-        <i class="fa-solid fa-file-pdf"></i></span>
-      </button>
+      <a href="https://www.linkedin.com/in/dineilie1997/" target="_blank"><button
+          class="btn btn-lg btn-primary-color img-hover-primary">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </button></a>
+      <a href="https://github.com/DinEilie" target="_blank"><button
+          class="btn btn-lg btn-primary-color img-hover-primary">
+          <i class="fa-brands fa-github"></i>
+        </button></a>
+      <a href="./files/Din Eilie Resume.pdf" target="_blank"><button
+          class="btn btn-lg btn-primary-color img-hover-primary">
+          <i class="fa-solid fa-file-pdf"></i>
+        </button></a>
     </div>
 
     <div class="row mt-5">
       <div class="col-lg text-start">
-        <div class="row pb-4">
-          <div class="col">
-            <label for="inputFN" class="form-label">First Name</label>
-            <input id="inputFN" type="text" class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white" aria-label="First name">
+        <form action="https://formsubmit.co/dineilie1997@gmail.com" method="POST">
+          <div class="row pb-4">
+            <div class="col">
+              <label for="inputFN" class="form-label">Name</label>
+              <input required id="inputN" name="name" type="text"
+                class="form-control rounded-1 border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white"
+                aria-label="First name">
+            </div>
+            <div class="col">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input required id="inputEmail" name="email" type="email"
+                class="form-control rounded-1 border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white"
+                aria-label="email">
+            </div>
           </div>
-          <div class="col">
-            <label for="inputLN" class="form-label">Last Name</label>
-            <input id="inputLN" type="text" class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white" aria-label="Second name">
+          <div class="row">
+            <div class="mb-2">Comments</div>
+            <div class="col form-floating">
+              <textarea name="_message"
+                class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white"
+                id="floatingTextarea" style="height: 15em;"></textarea>
+            </div>
           </div>
-        </div>
-        <div class="row pb-4">
-          <div class="col">
-            <label for="inputEmail" class="form-label">Email</label>
-            <input id="inputEmail" type="email" class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white"
-              aria-label="email">
+          <div class="row mt-4">
+            <div class="col">
+              <button type="submit" class="me-2 btn btn-lg btn-primary-color img-hover-primary">
+                <i class="fa-solid fa-paper-plane"></i> Send
+              </button><span class="fs-4 text-secondary">
+                mail: dineilie1997@gmail.com</span>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="mb-2">Comments</div>
-          <div class="col form-floating">
-            <textarea class="form-control border-top-0 border-bottom-0 border-end-0 blackShadow-lg bg-dark border-primary-left text-white" id="floatingTextarea"
-              style="height: 15em;"></textarea>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col">
-            <button type="submit" class="btn btn-lg btn-primary-color img-hover-primary">
-              <i class="fa-solid fa-paper-plane"></i> Send
-            </button>
-          </div>
-        </div>
+          <input type="hidden" name="_subject" value="New message from portfolio!">
+        </form>
       </div>
       <div class="pt-5 col-lg">
         <img style="height: 18em;" src="images/undraw_personal_text_re_vqj3.svg">

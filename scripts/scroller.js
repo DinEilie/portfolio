@@ -1,5 +1,6 @@
 var scroller = window.scrollY;
 const duration = 800;
+const bgTitle = document.getElementById("bg-title"); 
 const home = document.getElementById("home");
 const arrowUp = document.getElementById("arrow");
 const projects = document.getElementById("projects");
@@ -38,6 +39,7 @@ window.addEventListener("scroll", (event) => {
       project2.classList.add("fadeInLeft");
     }
   } else if (screen.width <= 1920 && screen.width > 1440) {
+    bgTitle.innerHTML = "P R O J E C T S";
     // Toggle arrow button
     if (scroller <= 350) {
       arrowUp.classList.remove("fadeInDown");
@@ -59,6 +61,7 @@ window.addEventListener("scroll", (event) => {
 
     // Toggle about
     if (scroller >= about.offsetTop - 460) {
+      bgTitle.innerHTML = '<span class="ps-5">C O N T A C T</span>';
       about1.classList.remove("invisible");
       about1.classList.add("fadeInDown");
 
