@@ -33,12 +33,12 @@
   color: var(--white);
 }
 
-.border-primary-left{
+.border-primary-left {
   border-left: 0.5rem solid;
   border-color: var(--primary);
 }
 
-.border-primary-right{
+.border-primary-right {
   border-right: 0.5rem solid;
   border-color: var(--primary);
 }
@@ -79,7 +79,7 @@ body {
   );
 }
 
-.fill-bg{
+.fill-bg {
   position: absolute;
   padding-left: 3px;
   padding-right: 3px;
@@ -88,7 +88,15 @@ body {
   display: inline-block;
 }
 
-.py-6{
+.py-6 {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.fs-7 {
+  font-size: 1.5rem;
+}
+
+.filter-blur {
+  filter: blur(10px);
 }

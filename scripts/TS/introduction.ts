@@ -1,17 +1,17 @@
-var textElement = document.getElementById("textWriter");
-var textElementVar = textElement.innerHTML;
-var btn = document.getElementById("seeWork");
-const text =
+var textElement: HTMLElement = document.getElementById("textWriter");
+var textElementVar: string = textElement.innerHTML;
+var btn: HTMLElement = document.getElementById("seeWork");
+const text: string =
   'Hello! I am Din a$<span class="text-white bg-dark px-2"> Full Stack Developer</span>$and a Computer Science student at The Open University. After years of dedication as an IT Administrator, I am taking a step forward into Web Development and programming.';
-speed = 35;
-var j = 0;
+var speed: number = 35;
+var j: number = 0;
 
 startWritingText();
 btn.hidden = true;
 
 // Write the text at 'INDEX'
 function startWritingText() {
-  var writeText = setInterval(function () {
+  var writeText: number = setInterval(() => {
     if (j < text.length) {
       if (text.charAt(j) == "$") {
         textElementVar = textElementVar.substring(0, j) + " |";
@@ -32,12 +32,12 @@ function startWritingText() {
   }, speed);
 }
 
-// hold the writing for 3.5 seconds
+// Show '|' every 0.5 second
 function holdWritingText() {
   btn.hidden = false;
   btn.classList.add("fadeInUp");
-  setInterval(function () {
-    var lastT = textElementVar.length - 1;
+  setInterval(() => {
+    var lastT: number = textElementVar.length - 1;
     if (textElementVar.charAt(lastT) == "|") {
       textElementVar = textElementVar.substring(0, lastT);
       textElement.innerHTML = textElementVar;
