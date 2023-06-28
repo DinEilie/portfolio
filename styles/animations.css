@@ -55,6 +55,12 @@
   animation: fadeInUpAnimate 1.5s;
 }
 
+.fadeIn {
+  -moz-animation: fadeInAnimate 1.5s;
+  -webkit-animation: fadeInAnimate 1.5s;
+  animation: fadeInAnimate 1.5s;
+}
+
 .scale-in-hor-center {
   -webkit-animation: scale-in-hor-center 1.5s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -290,6 +296,35 @@
   }
 }
 
+/* for Firefox */
+@-moz-keyframes fadeInAnimate {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes fadeInAnimate {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimate {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* for Chrome */
 @-webkit-keyframes scale-in-hor-center {
   0% {
@@ -340,5 +375,14 @@
   100% {
     -webkit-transform: translateZ(160px);
     transform: translateZ(160px);
+  }
+}
+
+@keyframes slide-right {
+  from{
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }

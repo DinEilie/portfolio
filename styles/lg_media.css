@@ -10,7 +10,7 @@
   }
 
   .fs-large {
-    font-size: 5rem;
+    font-size: 7.5rem;
   }
 
   /* Titles such as "PROJECT","Full Stack Developer"... */
@@ -30,9 +30,13 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 15%;
-    padding-top: 15%;
+    padding-top: 10%;
     background-color: var(--primary);
     font-size: 1.5rem;
+  }
+
+  .introImg {
+    width: 30em;
   }
 
   .projects {
@@ -43,6 +47,7 @@
     text-align: center;
     font-size: 1.5rem;
   }
+
   .about {
     text-align: center;
     font-size: 1.2rem;
@@ -157,22 +162,18 @@
     border-radius: 100%;
   }
 
-  .introImg {
-    margin-top: 12%;
-    width: 17em;
-  }
 
   .aboutImg {
     width: 10em;
   }
 
   .fs-large {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   /* Titles such as "PROJECT","Full Stack Developer"... */
   .fs-title {
-    font-size: 3rem;
+    font-size: 7rem;
   }
 
   .fs-brand {
@@ -186,10 +187,14 @@
   .home {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 24.5%;
+    padding-bottom: 15%;
     padding-top: 5%;
     background-color: var(--primary);
     font-size: 1.5rem;
+  }
+
+  .introImg {
+    width: 15em;
   }
 
   .projects {
@@ -286,14 +291,6 @@
     border-radius: 100%;
   }
 
-  .fs-large {
-    font-size: 10rem;
-  }
-
-  .fs-title {
-    font-size: 5rem;
-  }
-
   .fs-brand {
     font-size: 3.5rem;
   }
@@ -305,8 +302,8 @@
   .home {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 30%;
-    padding-top: 10%;
+    padding-bottom: 15%;
+    padding-top: 5%;
     background-color: var(--primary);
     font-size: 1.5rem;
   }
@@ -332,12 +329,11 @@
   }
 
   .introImg {
-    margin-top: 12%;
-    width: 17em;
+    width: 15em;
   }
 
   .fs-large {
-    font-size: 10rem;
+    font-size: 3.5rem;
   }
 
   .fs-title {
@@ -355,10 +351,10 @@
   .home {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 42%;
+    padding-bottom: 15%;
     padding-top: 10%;
     background-color: var(--primary);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .projects {
@@ -405,14 +401,10 @@
     filter: blur(5px);
   }
 
-  .introImg {
+  /* .introImg {
     margin-top: 12%;
     width: 17em;
-  }
-
-  .fs-large {
-    font-size: 4rem;
-  }
+  } */
 
   .fs-title {
     font-size: 5rem;
@@ -426,10 +418,14 @@
     font-size: 1rem;
   }
 
+  .introImg {
+    width: 16em;
+  }
+
   .home {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 45%;
+    padding-bottom: 15%;
     padding-top: 10%;
     background-color: var(--primary);
     font-size: 1.17rem;

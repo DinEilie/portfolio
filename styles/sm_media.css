@@ -9,16 +9,16 @@
     filter: blur(3px);
   }
 
-  .introImg {
-    transform: scale(0.5);
-  }
-
   .fs-title {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 
   .fs-brand {
     font-size: 3.5rem;
+  }
+
+  .fs-large {
+    font-size: 2rem;
   }
 
   .fs-item {
@@ -28,7 +28,7 @@
   .home {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 45%;
+    padding-bottom: 15%;
     padding-top: 10%;
     background-color: var(--primary);
     font-size: 1rem;

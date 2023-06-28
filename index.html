@@ -23,8 +23,8 @@
   <link href="styles/style.css" rel="stylesheet" />
   <link href="styles/scroller.css" rel="stylesheet" />
   <link href="styles/animations.css" rel="stylesheet" />
-  <link href="styles/sm_media.css" rel="stylesheet" />
   <link href="styles/lg_media.css" rel="stylesheet" />
+  <link href="styles/sm_media.css" rel="stylesheet" />
   <title>Din Eilie</title>
 </head>
 
@@ -80,10 +80,12 @@
     <section class="home">
       <div class="container-fluid z-2">
         <div class="row text-dark">
-          <div class="col text-start p-5 fadeInRight">
+          <div class="text-start">
+            <div class="text-center">
+              <img class="introImg fadeInLeft col-md-6 float-md-end mb-3 ms-md-3" src="images/undraw_programming_re_kg9v.svg" />
+            </div>
             <span class="fs-large">Full Stack Developer</span>
             <p id="textWriter">|</p>
-
             <div id="seeWork">
               <a href="#projects">
                 <button type="button" class="btn btn-dark btn-lg btn-hover-primary align-middle">
@@ -91,8 +93,31 @@
                 </button></a>
             </div>
           </div>
-          <div class="col text-center fadeInLeft">
-            <img class="introImg" src="images/undraw_programming_re_kg9v.svg" />
+          <div id="logos" hidden="true" class="p-5">
+            <div class="logos-slide">
+              <img src="./images/HTML5-logo.svg">
+              <img src="./images/CSS3-logo.svg">
+              <img src="./images/JavaScript-logo.svg">
+              <img src="./images/React-logo.svg">
+              <img src="./images/Typescript-logo.svg">
+              <img src="./images/Tailwind-CSS-logo.svg">
+              <img src="./images/bootstrap-logo.svg">
+              <img src="./images/Postgresql-logo.svg">
+              <img src="./images/Node.js-logo.svg">
+              <img src="./images/Git-logo.svg">
+            </div>
+            <div class="logos-slide">
+              <img src="./images/HTML5-logo.svg">
+              <img src="./images/CSS3-logo.svg">
+              <img src="./images/JavaScript-logo.svg">
+              <img src="./images/React-logo.svg">
+              <img src="./images/Typescript-logo.svg">
+              <img src="./images/Tailwind-CSS-logo.svg">
+              <img src="./images/bootstrap-logo.svg">
+              <img src="./images/Postgresql-logo.svg">
+              <img src="./images/Node.js-logo.svg">
+              <img src="./images/Git-logo.svg">
+            </div>
           </div>
         </div>
       </div>
@@ -116,42 +141,13 @@
       <div id="project2" class="row mb-5 mt-5 p-5 invisible">
         <div class="col border-top-0 border-bottom-0 border-start-0 p-5 blackShadow-lg bg-dark border-primary-right">
           <div class="row">
-            <div class="col-8 text-start">
+            <div class="col-6 text-start">
               <h1>Coding Challenges</h1>
-              <p class="text-secondary" style="font-style: italic">
-                Mastering algorithmic skills and Data structers<br />
-                by completing many coding challenges.<br />
+              <p class="text-secondary fs-5" style="font-style: italic">
+                Mastering algorithmic skills and Data structers
+                by completing many coding challenges.
               </p>
-              <h2>Skills</h2>
-              <div class="d-flex flex-row flex-wrap mb-3 fw-light">
-                <div class="p-2">
-                  <i class="fa-brands fa-html5 text-primary-color"></i>
-                  HTML5
-                </div>
-                <div class="p-2">
-                  <i class="fa-brands fa-css3-alt text-primary-color"></i>
-                  CSS3
-                </div>
-                <div class="p-2">
-                  <i class="fa-brands fa-windows text-primary-color"></i>
-                  Typescript
-                </div>
-                <div class="p-2">
-                  <i class="fa-brands fa-js text-primary-color"></i>
-                  Javascript
-                </div>
-                <div class="p-2">
-                  <i class="fa-sharp fa-solid fa-globe text-primary-color"></i>
-                  jQuery
-                </div>
-                <div class="p-2">
-                  <i class="bi bi-bootstrap text-primary-color"></i> Bootstrap
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <img class="blackShadow-lg mb-3" style="height: 10em; width: 15em" src="images/projectCodingChallenges.png" />
-              <div class="btn-group" role="group" aria-label="Basic example">
+              <div class="btn-group mt-5" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-primary-color img-hover-primary" onClick="
                 parent.open('https://dineilie.github.io/Algorithm-Visualizer/')">
                   <i class="fa-solid fa-eye"></i> Demo
@@ -162,6 +158,9 @@
                 </button>
               </div>
             </div>
+            <div class="col-6">
+              <img class="blackShadow-lg mb-3" style="height: 10em; width: 15em" src="images/projectCodingChallenges.png" />
+            </div>
           </div>
         </div>
       </div>
@@ -170,31 +169,14 @@
       <div id="project1" class="row mb-5 mt-5 p-5 invisible">
         <div class="col border-top-0 border-bottom-0 border-end-0 p-5 blackShadow-lg bg-dark border-primary-left">
           <div class="row">
-            <div class="col-8 text-start">
+            <div class="col-6 text-start">
               <h1>Assembler Compiler</h1>
-              <p class="text-secondary" style="font-style: italic">
-                Using C programming language this program <br />
-                will compile an Assembler code into a binary form.<br />
-                For more information check out the source code on GitHub.<br />
+              <p class="text-secondary fs-5" style="font-style: italic">
+                Using C programming language this program
+                will compile an Assembler code into a binary form.
+                For more information check out the source code on GitHub.
               </p>
-              <h2>Skills</h2>
-              <div class="d-flex flex-row flex-wrap mb-3 fw-light">
-                <div class="p-2">
-                  <i class="fa-solid fa-c text-primary-color"></i></i>
-                  Programming Language
-                </div>
-                <div class="p-2">
-                  <i class="fa-brands fa-ubuntu text-primary-color"></i>
-                  Ubuntu
-                </div>
-                <div class="p-2">
-                  <i class="bi bi-terminal-fill text-primary-color"></i> Linux Terminal
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <img class="blackShadow-lg mb-3" style="height: 10em; width: 15em" src="images/projectAssembler.png" />
-              <div class="btn-group" role="group" aria-label="Basic example">
+              <div class="btn-group mt-auto" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-primary-color img-hover-primary" onClick="
                 parent.open('https://github.com/DinEilie/Assembler_Compiler/archive/refs/heads/main.zip')">
                 <i class="fa-solid fa-download"></i> Download
@@ -204,6 +186,9 @@
                   <i class="fa-brands fa-github"></i> Source
                 </button>
               </div>
+            </div>
+            <div class="col-6">
+              <img class="blackShadow-lg mb-3" style="height: 10em; width: 15em" src="images/projectAssembler.png" />
             </div>
           </div>
         </div>

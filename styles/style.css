@@ -100,3 +100,46 @@ body {
 .filter-blur {
   filter: blur(10px);
 }
+
+#logos {
+  overflow: hidden;
+  padding: 5%;
+  white-space: nowrap;
+  position: relative;
+}
+
+#logos:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0), var(--primary));
+  content: "";
+  z-index: 2;
+}
+
+#logos:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0), var(--primary));
+  content: "";
+  z-index: 2;
+}
+
+/* #logos:hover .logos-slide{
+  animation-play-state: paused;
+} */
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide-right infinite linear;
+}
+
+.logos-slide img {
+  margin: 20px;
+  height: 70px;
+}
