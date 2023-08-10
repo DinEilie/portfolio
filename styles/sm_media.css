@@ -1,5 +1,22 @@
 /* md */
 @media screen and (max-width: 768px) {
+  .aboutGrid {
+    font-size: 0.8rem;
+  }
+
+  .aboutGrid > #grid2 {
+    font-size: 0.8rem;
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .img-size {
+    width: 240px;
+    height: 120px;
+  }
+
   .fs-big {
     top: 40%;
     left: 30%;
@@ -10,15 +27,15 @@
   }
 
   .fs-title {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
   .fs-brand {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .fs-large {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .fs-item {
@@ -44,10 +61,38 @@
 }
 /* sm */
 @media screen and (max-width: 576px) {
+  .aboutGrid {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    height: 300px;
+    display: block;
+    grid-template-areas: "a b";
+  }
   .fs-big {
     top: 40%;
     left: 20%;
     text-align: center;
     font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .img-size {
+    width: 180px;
+    height: 80px;
+  }
+
+  #about {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .aboutImg {
+    width: 5.5em;
+  }
+
+  .contactImg {
+    height: 10em;
   }
 }
