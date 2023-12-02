@@ -9,6 +9,7 @@ const arrowUp: HTMLElement = document.getElementById("arrow");
 const projects: HTMLElement = document.getElementById("projects");
 const project1: HTMLElement = document.getElementById("project1");
 const project2: HTMLElement = document.getElementById("project2");
+const project3: HTMLElement = document.getElementById("project3");
 const about: HTMLElement = document.getElementById("about");
 const about1: HTMLElement = document.getElementById("about1");
 const about3: HTMLElement = document.getElementById("about3");
@@ -70,6 +71,10 @@ window.addEventListener("scroll", (event) => {
   if (project2.getBoundingClientRect().top <= windowHeight - revealFromTop) {
     project2.classList.remove("invisible");
     project2.classList.add("fadeInLeft");
+  }
+  if (project3.getBoundingClientRect().top <= windowHeight - revealFromTop) {
+    project3.classList.remove("invisible");
+    project3.classList.add("fadeInLeft");
   }
 
   // Toggle about
