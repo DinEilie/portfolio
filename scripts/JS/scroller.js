@@ -10,6 +10,7 @@ const projects = document.getElementById("projects");
 const project1 = document.getElementById("project1");
 const project2 = document.getElementById("project2");
 const project3 = document.getElementById("project3");
+const project4 = document.getElementById("project4");
 const about = document.getElementById("about");
 const about1 = document.getElementById("about1");
 const about3 = document.getElementById("about3");
@@ -76,7 +77,11 @@ window.addEventListener("scroll", (event) => {
     }
     if (project3.getBoundingClientRect().top <= windowHeight - revealFromTop) {
         project3.classList.remove("invisible");
-        project3.classList.add("fadeInLeft");
+        project3.classList.add("fadeInRight");
+    }
+    if (project4.getBoundingClientRect().top <= windowHeight - revealFromTop) {
+        project4.classList.remove("invisible");
+        project4.classList.add("fadeInLeft");
     }
     // Toggle about
     if (about.getBoundingClientRect().top <= windowHeight - revealFromTop) {

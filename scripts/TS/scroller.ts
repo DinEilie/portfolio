@@ -3,13 +3,14 @@ var windowHeight: number = window.innerHeight;
 var revealFromTop: number = 400;
 var scroller = window.scrollY;
 const duration: number = 800;
-const bgTitle: HTMLElement = document.getElementById("bg-title"); 
+const bgTitle: HTMLElement = document.getElementById("bg-title");
 const home: HTMLElement = document.getElementById("home");
 const arrowUp: HTMLElement = document.getElementById("arrow");
 const projects: HTMLElement = document.getElementById("projects");
 const project1: HTMLElement = document.getElementById("project1");
 const project2: HTMLElement = document.getElementById("project2");
 const project3: HTMLElement = document.getElementById("project3");
+const project4: HTMLElement = document.getElementById("project4");
 const about: HTMLElement = document.getElementById("about");
 const about1: HTMLElement = document.getElementById("about1");
 const about3: HTMLElement = document.getElementById("about3");
@@ -22,7 +23,6 @@ window.addEventListener("scroll", (event) => {
   scroller = this.scrollY;
   windowHeight = this.innerHeight;
   if (screen.width > 1920) {
-    
     // Toggle arrow button
     if (scroller <= 405) {
       arrowUp.classList.remove("fadeInDown");
@@ -31,9 +31,7 @@ window.addEventListener("scroll", (event) => {
       arrowUp.classList.add("fadeInDown");
       arrowUp.hidden = false;
     }
-
   } else if (screen.width <= 1920 && screen.width > 1440) {
-
     // Toggle arrow button
     if (scroller <= 365) {
       arrowUp.classList.remove("fadeInDown");
@@ -64,7 +62,7 @@ window.addEventListener("scroll", (event) => {
   bgTitle.textContent = "P R O J E C T S";
 
   // Toggle projects blocks
-  if (project1.getBoundingClientRect().top <=  windowHeight - revealFromTop) {
+  if (project1.getBoundingClientRect().top <= windowHeight - revealFromTop) {
     project1.classList.remove("invisible");
     project1.classList.add("fadeInRight");
   }
@@ -74,7 +72,11 @@ window.addEventListener("scroll", (event) => {
   }
   if (project3.getBoundingClientRect().top <= windowHeight - revealFromTop) {
     project3.classList.remove("invisible");
-    project3.classList.add("fadeInLeft");
+    project3.classList.add("fadeInRight");
+  }
+  if (project4.getBoundingClientRect().top <= windowHeight - revealFromTop) {
+    project4.classList.remove("invisible");
+    project4.classList.add("fadeInLeft");
   }
 
   // Toggle about

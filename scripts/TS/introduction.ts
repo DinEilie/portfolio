@@ -1,9 +1,9 @@
 var textElement: HTMLElement = document.getElementById("textWriter");
 var textElementVar: string = textElement.innerHTML;
 var btn: HTMLElement = document.getElementById("seeWork");
-var logos:HTMLElement = document.getElementById("logos")
+var logos: HTMLElement = document.getElementById("logos");
 const text: string =
-  'Hello! I am Din a$<span class="text-white bg-dark px-2"> Full Stack Developer</span>$and a Computer Science student at The Open University. After years of dedication as an IT Administrator, I am taking a step forward into Web Development and programming.';
+  'Hello! I am Din a$<span class="text-white bg-dark px-2"> Full Stack Developer</span>$and currently graduating Computer Science degree at The Open University. After years of dedication as an IT Administrator, I am taking a step forward into Web Development and programming.';
 var speed: number = 35;
 var j: number = 0;
 
@@ -11,10 +11,9 @@ startWritingText();
 btn.hidden = true;
 logos.hidden = true;
 
-
 // Write the text at 'INDEX'
 function startWritingText() {
-  var writeText: number = setInterval(() => {
+  var writeText = setInterval(() => {
     if (j < text.length) {
       if (text.charAt(j) == "$") {
         textElementVar = textElementVar.substring(0, j) + " |";
